@@ -10,13 +10,14 @@ This document is based off of the instructions provided by Espressif [here](http
   - Download and install the latest versions of [MSYS2](https://www.msys2.org/) and [Python](https://www.python.org/downloads/windows/).
   - Download the [ESP8266 toolchain](https://dl.espressif.com/dl/xtensa-lx106-elf-win32-1.22.0-100-ge567ec7-5.2.0.zip) from Espressif. Extract this file and place the `xtensa-lx106-elf` subfolder in `C:\msys64\opt`.
   - Navigate to `win+pausebreak` -> Advanced system settings -> Advanced -> Environmental Variables. Create new system environmental variable with name `IDF_PATH` and value `C:\msys64\home\USERNAME\esp\ESP8266_RTOS_SDK` (with `USERNAME` applicably replaced).
-- Run MSYS2 MinGW 
+- Update MSYS2 MinGW 32-bit
   - `pacman -Syu`
-  - Close and reopen MinGW
+  - Close and reopen MinGW 32-bit
   - `pacman -Syu` (again)
 - Install dependencies
   - `pacman -S git base-devel gcc cmake mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake python-pip mingw-w64-x86_64-python-cffi libffi-devel libcrypt-devel libcrypt openssl openssl-devel ncurses ncurses-devel`
   - `python -m pip install --user -r $IDF_PATH/requirements.txt`
+  - `export PATH=$PATH:/opt/xtensa-lx106-elf/bin`
 - Download SDK
   - `mkdir ~/esp; cd ~/esp`
   - `git clone --recursive https://github.com/espressif/ESP8266_RTOS_SDK.git`
