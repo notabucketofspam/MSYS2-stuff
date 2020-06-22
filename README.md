@@ -27,6 +27,6 @@ This document is based off of the instructions provided by Espressif [here](http
   - `cp -r $IDF_PATH/examples/get-started/hello_world .; cd hello_world`
   - `make menuconfig`
   - Set Serial flasher config -> Default serial port to `/dev/ttyS#`, with # replaced by the COM port number minus one of the device as listed under Windows Device Manager (e.g. `COM8` -> `/dev/ttyS7`).
-  - Configure other options as necessary.
+  - Configure other options as necessary and save.
 
   After this point the Eclipse IDE may be used to build and flash projects. Consult Espressif instructions [here](https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/get-started/eclipse-setup.html#) and [here](https://docs.espressif.com/projects/esp8266-rtos-sdk/en/latest/get-started/eclipse-setup-windows.html). Replace instances of `mingw32` with `mingw64` where applicable.
