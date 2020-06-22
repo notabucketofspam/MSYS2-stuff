@@ -15,7 +15,7 @@ This document is based off of the instructions provided by Espressif [here](http
   - Close and reopen MinGW 32-bit
   - `pacman -Syu` (again)
 - Install dependencies
-  - `pacman -S git base-devel gcc cmake mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake python-pip mingw-w64-x86_64-python-cffi libffi-devel libcrypt-devel libcrypt openssl openssl-devel ncurses ncurses-devel`
+  - `pacman -S git base-devel gcc cmake mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake python-pip mingw-w64-x86_64-python-cffi libffi-devel libcrypt-devel libcrypt openssl openssl-devel ncurses ncurses-devel winpty`
   - `python -m pip install --user -r $IDF_PATH/requirements.txt`
 - Fix environment
   - `export PATH=$PATH:/opt/xtensa-lx106-elf/bin`
