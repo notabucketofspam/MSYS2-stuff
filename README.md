@@ -18,7 +18,7 @@ This document is based off of the instructions provided by Espressif [here](http
   - `pacman -S git base-devel gcc cmake mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake python-pip mingw-w64-x86_64-python-cffi libffi-devel libcrypt-devel libcrypt openssl openssl-devel ncurses ncurses-devel winpty`
   - `python -m pip install --user -r $IDF_PATH/requirements.txt`
 - Fix environment
-  - `export PATH=$PATH:/opt/xtensa-lx106-elf/bin`
+  - `echo "export PATH=$PATH:/opt/xtensa-lx106-elf/bin" >> ~/.bashrc; source ~/.bashrc`
   - Open `C:\msys64\home\USERNAME\.local\lib\python3.8\site-packages\serial\tools\list_ports_posix.py` and edit `elif plat == 'cygwin'` to `elif plat == 'cygwin' or plat == 'msys'`
 - Download SDK
   - `mkdir ~/esp; cd ~/esp`
