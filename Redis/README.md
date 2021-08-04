@@ -4,7 +4,7 @@ Steps to build a mostly-functioning Redis server on Windows.
 
 ## Method
 
-Note: this project uses MinGW 64-bit
+Note: this project uses MinGW 64-bit.
 
 - Install dependencies
   - `pacman -S tcl`
